@@ -1,0 +1,359 @@
+*{
+    font-family:monospace;
+    font-size: large;
+}
+
+.navbar-nav .dropdown-menu{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.register-now u{
+    text-decoration: none;
+    color: #45a049;
+}
+
+.marquee-container{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-top: 5px solid rgb(0, 153, 255);
+    border-bottom: 5px solid rgb(0, 153, 255)
+}
+
+.marquee{
+    display: inline-block;
+    padding-left: 0;
+    animation: marquee 30s linear infinite;
+    font-size: 1.2 rem;
+    color: #333;
+    .element {
+    transition: transform 0.5s ease-in-out;
+}
+
+}
+
+@keyframes marquee{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container:hover .marquee{
+    animation-play-state:paused;
+}
+
+.carousel-item{
+    
+    background-color: rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.footer{
+    color: #000;
+}
+
+.footer h5{
+    margin-bottom:20px;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+.social-icons a{
+    font-size: 24px;
+    transition:color 0.3s ease-in-out;
+
+}
+
+.social-icons a:hover{
+    color: #007bff;
+}
+
+.input-group .form-control{
+    border-radius:0;
+    border: 2px solid #000;
+}
+
+.input-group .btn:hover{
+    background-color: #45a049;
+}
+
+
+.globe-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.globe-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.oet-section{
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.oet-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e4c9d;
+}
+.medical-english-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e4c9d;
+}
+.course-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e4c9d;
+}
+.matching-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e4c9d;
+}
+
+.oet-description{
+    font-size: 1rem;
+    color: #4f4f3f;
+    line-height: 1.7;
+}
+
+.oet-link a{
+    color: #1e4c9d;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.oet-link a:hover{
+    text-decoration: none;
+}
+
+.oet-partner{
+    margin-top: 20px;
+}
+
+.embed-responsive-item{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-container img {
+    max-height: 80px;
+    margin: 10px;
+}
+
+/*Course*/
+.card {
+    
+    border: none;
+    margin-bottom: 30px;
+    height: 100%;
+}
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+.price-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.free-tag {
+    background-color: green;
+}
+
+.card-footer{
+    background-color: transparent;
+    border-top: none;
+}
+
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2E7D32; /* Green text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.download-btn::after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    border: solid #2E7D32; /* Green arrow color */
+    border-width: 0 4px 4px 0;
+    padding: 6px;
+    transform: rotate(-45deg);
+    transition: border-color 0.3s ease;
+}
+
+.download-btn:hover {
+    color: #1B5E20; /* Darker green on hover */
+}
+
+.download-btn:hover::after {
+    border-color: #1B5E20; /* Darker arrow on hover */
+}
+
+  
+  .card {
+    margin: 15px auto;
+    background: linear-gradient(to bottom right, #83e0fa, #1d5293);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    color: blue
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  .card-title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #0072ff;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-img-top {
+      width: 60%;
+    }
+  }
+  
+
+  /* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Banner styling */
+  .banner {
+    background-image: url('images/banner.html'); /* Replace with your image name */
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-heading {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .btn-success {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  
+  .btn-success:hover {
+    background-color: #45a049;
+  }
+  
